@@ -1,4 +1,4 @@
-edad = int(input("ingresa tu edad"))
+edad = int(input("ingresa tu edad:"))
 
 if edad < 13:
     print("no puedes ingresar")
