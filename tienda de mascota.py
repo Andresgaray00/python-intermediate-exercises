@@ -1,14 +1,20 @@
-mascota = input("¿que animal es tu mascota?:").strip().lower()
+siguiente_usuario = "si"
 
-if mascota == "perro":
-    print("pienso para perros")
+while siguiente_usuario.lower() == "si":
 
-elif mascota == "gato":
-    print("pienso para gatos")
+    mascota = input("¿que animal es tu mascota?: ").strip().lower()
 
-elif mascota == "conejo":
-    print("heno o verduras para conejos")
+    if mascota == "perro":
+        print("concentrado para perros")
 
-else:
-    print("error: mascota no reconocida")
+    elif mascota == "gato":
+        print("comida para gatos")
+
+    elif mascota == "conejo":
+        print("heno o verduras para conejos")
+
+    else:
+        print("error: mascota no reconocida")
+
+    siguiente_usuario = input("quieres ingresar una nueva mascota (si/no) ")
 

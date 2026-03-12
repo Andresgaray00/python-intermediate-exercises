@@ -1,13 +1,17 @@
-edad = int(input("ingresa tu edad:"))
+continuar = "si"
+while continuar.lower() == "si": 
 
-if edad < 13:
-    print("no puedes ingresar")
+    edad = int(input("ingresa tu edad:"))
 
-elif edad <= 17:
-    print("clase juvenil")
+    if edad < 0:
+        print("la edad no puede ser negativa")
 
-elif edad <= 59:
-    print("clase general")
+    elif edad <= 17:
+        print("clase juvenil")
 
-else:
-    print("clase senior")
+    elif edad <= 59:
+        print("clase general")
+
+    else:
+       print("clase senior")
+    continuar = input("quieres ingresar otra edad: (si/no)")
