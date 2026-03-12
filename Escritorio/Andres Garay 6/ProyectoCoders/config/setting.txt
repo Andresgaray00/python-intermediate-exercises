@@ -1,0 +1,8 @@
+# Configuraciones del proyecto
+
+Lenguaje: Python
+Versión: 3.11
+Base de datos: SQLite
+Editor recomendado: VSCode
+Tema del editor: Claro
+Modo de depuración: Activado
