@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex justify-center items-center">
+
+    <!-- Tarjeta del login -->
+    <div class="bg-white w-full max-w-md p-8 rounded-xl shadow-md">
+
+        <h1 class="text-3xl font-bold text-center mb-2">
+            Iniciar Sesión
+        </h1>
+
+        <p class="text-center text-gray-500 mb-6">
+            Ingresa tus credenciales
+        </p>
+
+        <!-- Formulario -->
+        <form id="loginForm">
+
+            <!-- Correo -->
+            <div class="mb-4">
+                <label for="email" class="block mb-2 font-medium">
+                    Correo electrónico
+                </label>
+
+                <input type="email" id="email" placeholder="correo@ejemplo.com"
+                    class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-orange-500"
+                    required>
+            </div>
+
+            <!-- Contraseña -->
+            <div class="mb-4">
+                <label for="password" class="block mb-2 font-medium">
+                    Contraseña
+                </label>
+
+                <input type="password" id="password" placeholder="********"
+                    class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-orange-500"
+                    required>
+            </div>
+
+            <!-- Mensaje de error -->
+            <p id="message" class="text-red-500 text-sm mb-4"></p>
+
+            <!-- Botón -->
+            <button type="submit" class="w-full bg-orange-500 text-white p-3 rounded-lg hover:bg-orange-600 transition">
+                Ingresar
+            </button>
+
+        </form>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
